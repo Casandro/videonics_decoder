@@ -1,0 +1,12 @@
+Data is encoded in the video.
+
+24 pixels per line. 172 lines. => 516 octets
+White pixels are 1.
+Black pixels are 0.
+
+Packet format: 512 octets data + 2 octets CRC + 2 octets black.
+
+reveng recports
+width=16  poly=0x8005  init=0x0000  refin=true  refout=true  xorout=0x0000  check=0xbb3d  residue=0x0000  name="CRC-16/ARC"
+for the CRC
+
